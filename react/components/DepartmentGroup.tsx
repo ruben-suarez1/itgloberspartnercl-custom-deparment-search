@@ -25,6 +25,7 @@ const departmentOptions: any = departments.map((department: Category) => {
     </option>
   )
 })
+
 return (
   <select
     onChange={onHandleSetSlug}
