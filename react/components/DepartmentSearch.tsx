@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useQuery } from "react-apollo"
 import QUERY_VALUE from "../graphql/getDepartmentGroup.graphql"
 import DepartmentGroup from './DepartmentGroup'
+import styles from "./styles.css"
 
 import { SearchBar } from "vtex.store-components";
 
@@ -14,16 +15,19 @@ const DepartmentSearch = () => {
   ?
     <div>Loading...</div>
   :
-    <div className='flex'>
-      <DepartmentGroup
-          departments={data?.categories[0]?.children}
-          handleSetSlug={setSlug}
-      />
-       <SearchBar
-        customSearchPageUrl={slug}
-        placeholder="Que buscas..."
-        displayMode="search-and-clear-buttons"
-      />
+    <div>
+      <h2 className={styles["department__title"]}>Busqueda por departamentos</h2>
+      <div  className={styles["department__container"]}>
+        <DepartmentGroup
+            departments={data?.categories[0]?.children}
+            handleSetSlug={setSlug}
+        />
+        <SearchBar
+          customSearchPageUrl={slug}
+          placeholder="Que buscas..."
+          displayMode="search-and-clear-buttons"
+        />
+      </div>
     </div>
 }
 

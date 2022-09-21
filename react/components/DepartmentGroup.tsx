@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./styles.css"
 
 type Props = {
   departments: [Category],
@@ -25,10 +26,12 @@ const departmentOptions: any = departments.map((department: Category) => {
     </option>
   )
 })
+
 return (
   <select
     onChange={onHandleSetSlug}
     defaultValue="value0"
+    className={styles["department__select"]}
   >
     <option disabled value="value0">Seleccione una opcion</option>
     {departmentOptions}
