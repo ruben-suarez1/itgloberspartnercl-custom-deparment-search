@@ -1,0 +1,16 @@
+.department__title {
+  text-align: center;
+}
+
+.department__container {
+  display: flex;
+  justify-content: center;
+}
+
+.department__select {
+  margin: 0.7rem;
+  border-radius: 0.2rem;
+  background: #0F3E99;
+  color: white;
+  border: none;
+}
