@@ -15,3 +15,9 @@
   color: white;
   border: none;
 }
+
+@media (max-width: 1024px) {
+  .department__select {
+    width: 60%;
+  }
+}
