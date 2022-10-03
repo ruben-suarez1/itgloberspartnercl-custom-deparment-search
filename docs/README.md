@@ -2,6 +2,8 @@
 
 Daremos la opción de elegir un departamento en nuestra barra de búsqueda
 
+![custom-department-search](https://user-images.githubusercontent.com/84733911/193508140-5082f76e-b873-4f87-8278-decf6c3afdec.png)
+
 ## Configuración
 
 ### Paso 1 - Configuración básica
